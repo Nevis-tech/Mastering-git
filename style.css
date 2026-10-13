@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+    align-items: baseline;
+    display: flex;
+    transform: 1s;
+    box-shadow: 20px;
+    border-radius: 5px;
+    width: 1000px;
+    height: inherit;
+}
