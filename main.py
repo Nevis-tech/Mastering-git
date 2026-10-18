@@ -1,9 +1,11 @@
+#Beggining
+
 message = "Hello Python World"
 print(message)
 
 message = "Hello World Of Python Crash course"
 print(message)
-print("hope everyone is doing great asf")
+print("hope everyone is doing great")
 print("And to be told we are all good thanks")
 
 # strings
@@ -28,3 +30,14 @@ print(message)
 # adding white spaces(\t) and moving to a new line(\n)
 
 print("Languages: \n\tJavaScript \n\tC++ \n\tPython")
+
+# striping white spaces from right using (rstrip) and from the left side using (lstrip)
+
+favourite_language = "Python "
+#print(favourite_language)
+print(favourite_language.rstrip())
+
+country =  " Cameroon"
+#print(country)
+print(country.lstrip())
+
