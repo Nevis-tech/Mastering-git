@@ -20,3 +20,11 @@ first_name = "Shanny"
 last_name = "Rosine"
 full_name = f"{first_name} {last_name}"
 print(full_name)
+print(f"Hello {full_name.title()}!")
+
+message = f"Hello {full_name.title()}!"
+print(message)
+
+# adding white spaces(\t) and moving to a new line(\n)
+
+print("Languages: \n\tJavaScript \n\tC++ \n\tPython")
