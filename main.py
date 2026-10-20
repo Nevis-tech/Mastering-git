@@ -78,7 +78,7 @@ print(my_message)
 #comments
 
 #The Zen of Python
-import this #Rules to follow and apply when writing our codes
+import this #Rules to follow and apply when writing our code
 
 
 
