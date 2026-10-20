@@ -1,4 +1,4 @@
-#Beggining
+"""#Beggining
 
 message = "Hello Python World"
 print(message)
@@ -79,6 +79,66 @@ print(my_message)
 
 #The Zen of Python
 import this #Rules to follow and apply when writing our code
+"""
 
+#LISTS (Allows you to store information in one place)
 
+brands = ['BMW', 'GLE', 'Toyota', 'Dodge', 'Tesla']
+print(brands)
+
+#accessing elements (by position or index, which always starts from 0 )
+print(brands[0]) #BMW
+print(brands[3]) #Dodge
+#Negative numbers can also be used to access elements in a list from the last(beginning form -1). EG
+print(brands[-1]) #Tesla
+print(brands[-2]) #Dodge
+
+#using individual values from a list
+message = f"My second car was a flying {brands[-1]}" #My second car was a flying Tesla
+print(message)
+
+#Exercise
+
+names = ["Nevis", "Khan", "Faith", "Wisdom", "Rosynie"]
+print(names[0])
+print(names[1])
+print(names[2])
+print(names[3])
+print(names[4])
+
+print(f"Hello {names[0]}! How are you doing?")
+print(f"Hello {names[1]}! How are you doing?")
+print(f"Hello {names[2]}! How are you doing?")
+print(f"Hello {names[3]}! How are you doing?")
+print(f"Hello {names[4]}! How are you doing?")
+
+#Changing, Adding and Removing elements
+motorcycles = ['Honda', 'yamaha', 'suzuki', 'Ellisam', 'Nanfang']
+print(motorcycles)
+
+#changing
+motorcycles[2] = 'Lfancy'
+print(motorcycles)
+
+#adding
+motorcycles.append('KEKE')
+motorcycles.append('Short Gun') 
+print(motorcycles)
+
+#inserting
+motorcycles.insert(0, 'High Jack') #exact position and item
+print(motorcycles)
+
+#removing(deleting)
+#1) using the del method (which after item is removed, it can not be used again)
+del motorcycles[0]
+print(motorcycles)
+
+#2) using the pop method (which after item is removed, it can be used after) (removes just the last item or element)
+popped_motorcycle = motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycle)
+
+last_owned = motorcycles.pop()
+print(f"the last motorcycle i owned was {last_owned.title()}")
 
