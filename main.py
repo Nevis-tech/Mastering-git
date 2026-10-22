@@ -142,3 +142,54 @@ print(popped_motorcycle)
 last_owned = motorcycles.pop()
 print(f"the last motorcycle i owned was {last_owned.title()}")
 
+#popping by position
+first_owned = motorcycles.pop(0)
+print(f"The first car i owned was a {first_owned.title()}")
+
+
+#exercise under lists
+
+guest = ['Fabiola', 'Rosynie', 'Bright']
+first_guest = guest[0]
+print(f"We Highly invite you {first_guest} to our dinner to night")
+second_guest = guest[1]
+print(f"We Highly invite you {second_guest} to our dinner to night")
+third_guest = guest[2]
+print(f"We Highly invite you {third_guest} to our dinner to night")
+
+print(f"{second_guest} is not able to attend the dinner")
+
+guest[1] = 'Rosine'
+print(f"We Highly invite you {first_guest} to our dinner to night")
+second_guest = guest[1]
+print(f"We Highly invite you {second_guest} to our dinner to night")
+third_guest = guest[2]
+print(f"We Highly invite you {third_guest} to our dinner to night")
+
+print("Hello guys i just found a bigger table!")
+
+fourth_guest = guest.insert(0, 'Fabiola')
+fifth_guest = guest.insert(2, 'Nevis')
+sixth_guest = guest.append('Angelo')
+print(guest)
+
+#...........
+
+print(f"We Highly invite you {first_guest} to our dinner to night")
+print(f"We Highly invite you {second_guest} to our dinner to night")
+print(f"We Highly invite you {third_guest} to our dinner to night")
+print(f"We Highly invite you {guest[0]} to our dinner to night")
+print(f"We Highly invite you {guest[2]} to our dinner to night")
+print(f"We Highly invite you {guest[-1]} to our dinner to night")
+
+print("Oh sory guys the dinner will be delaid and i can invite just 2 people :(")
+
+guest.pop(0)
+guest.pop(1)
+guest.pop(2)
+guest.pop(3)
+
+print(guest)
+
+
+
