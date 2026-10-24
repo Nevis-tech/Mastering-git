@@ -168,9 +168,9 @@ print(f"We Highly invite you {third_guest} to our dinner to night")
 
 print("Hello guys i just found a bigger table!")
 
-fourth_guest = guest.insert(0, 'Fabiola')
-fifth_guest = guest.insert(2, 'Nevis')
-sixth_guest = guest.append('Angelo')
+guest.insert(0, 'Fabiola')
+guest.insert(2, 'Nevis')
+guest.append('Angelo')
 print(guest)
 
 #...........
@@ -190,6 +190,6 @@ guest.pop(2)
 guest.pop(3)
 
 print(guest)
-
+ 
 
 
