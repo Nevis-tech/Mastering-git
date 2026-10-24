@@ -32,6 +32,8 @@ print("this is the sorted reversed list revered alphabetically")
 favourite_places.sort(reverse = True)
 print(favourite_places)
 
+print(f"So eventualy this boy likes to go to {len(favourite_places)} counties")
+
 
 
 

@@ -182,6 +182,8 @@ print(f"We Highly invite you {guest[0]} to our dinner to night")
 print(f"We Highly invite you {guest[2]} to our dinner to night")
 print(f"We Highly invite you {guest[-1]} to our dinner to night")
 
+print(f"im inviting {len(guest)} friends for the dinner") 
+
 print("Oh sory guys the dinner will be delaid and i can invite just 2 people :(")
 
 guest.pop(0)
@@ -190,6 +192,11 @@ guest.pop(2)
 guest.pop(3)
 
 print(guest)
+
  
+
+ #AVOIDING INDEX ERRORS WHEN WORKING WITH LIST
+
+
 
 
