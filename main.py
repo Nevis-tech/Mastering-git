@@ -80,7 +80,7 @@ print(my_message)
 #The Zen of Python
 import this #Rules to follow and apply when writing our code
 """
-
+"""
 #LISTS (Allows you to store information in one place)
 
 brands = ['BMW', 'GLE', 'Toyota', 'Dodge', 'Tesla']
@@ -197,6 +197,18 @@ print(guest)
 
  #AVOIDING INDEX ERRORS WHEN WORKING WITH LIST
 
+"""
 
 
+#WORKING WITH LISTS USING LOOPS
 
+magicians = ['Nevis', 'Khan', 'Paul', 'Jack', 'Peter']
+
+for magician in magicians:
+    #print(magician)
+    print(f"{magician.title()}, that was a great trick")
+    print(f"I can't wait to see your next trick {magician.title()}")
+#Stoping the loop
+print("Thank you every one that was a great magic show!")
+
+     
