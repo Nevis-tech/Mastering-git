@@ -211,4 +211,22 @@ for magician in magicians:
 #Stoping the loop
 print("Thank you every one that was a great magic show!")
 
-     
+#Making Numerical Lists
+#1) Using range()
+for number in range(1, 5):
+    print(number)
+
+#using range() to make a list of numbers
+numbers = list(range(1, 6))
+print(numbers)
+
+#using range to skip numbers in a range
+even_numbers = list(range(2, 11, 2))
+print(even_numbers)
+
+
+squares = [] #first we create our empty list
+for values in range(1, 11):  #next we loop though our given number of range
+    square = values ** 2 #we square each value from the range
+    squares.append(square) #Then we add te square numbers to the empty list we created
+print(squares) #and lastly we print tfe list :)
