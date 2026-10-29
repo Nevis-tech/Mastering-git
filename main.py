@@ -225,8 +225,13 @@ even_numbers = list(range(2, 11, 2))
 print(even_numbers)
 
 
-squares = [] #first we create our empty list
+"""squares = [] #first we create our empty list
 for values in range(1, 11):  #next we loop though our given number of range
     square = values ** 2 #we square each value from the range
     squares.append(square) #Then we add te square numbers to the empty list we created
-print(squares) #and lastly we print tfe list :)
+print(squares) #and lastly we print tfe list :)"""
+
+#list comprehension
+squares = [value**2 for value in range(1, 11)]
+print(squares)
+
