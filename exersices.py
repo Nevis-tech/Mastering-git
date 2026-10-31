@@ -47,3 +47,33 @@ print(cubes)
 cubes = [value ** 3 for value in range(1, 11)]
 print(cubes)
 
+#Exercise on slicing lists
+my_fruits = ['Mango', 'Pear', 'Apple', 'Banana', 'Guava', 'Orange']
+print("The first 3 items of the list are: ")
+print(my_fruits[0:3])
+print("Three items from the middle of the list are: ")
+print(my_fruits[2:4])
+print("The last 3 items on the list are: ")
+print(my_fruits[-3:])
+friend_friuts = my_fruits[:]
+my_fruits.append("Grapes")
+print(my_fruits)
+friend_friuts.append("Achu")
+print(friend_friuts)
+
+
+#Exercise on Tuple
+food_stuffs = ('Fried Rice', 'Kati Kati', 'Cornchaff', 'Gari and Eru', 'Achu')
+print("The menu of today: ")
+for food in food_stuffs:
+    print(food)
+#food_stuffs[0] = "Iris" #type Error
+#print (food_stuffs)
+
+#rewriting the tuple
+food_stuffs = ('Fried Rice', 'Kati Kati', 'Ndole', 'Pork Meat', 'Achu')
+print("Modified Menu: ")
+for food in food_stuffs:
+    print(food)
+
+

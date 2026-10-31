@@ -264,5 +264,25 @@ print("My friends favourite foods are:")
 friend_food.append('Plum')
 print(friend_food)
 
+#TUPLES
+my_t = (3, 10, 40 )
+print(my_t)
+
+#writing over a tuple
+#assigning new values to a variable that exist as a tuple
+dimensions = (500, 20)
+print("Original dimensions: ")
+for dimension in dimensions:
+    print(dimension)
+
+dimensions = (400, 100)
+print("Modified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+#STYLING MY CODE
+
+
+
 
 
