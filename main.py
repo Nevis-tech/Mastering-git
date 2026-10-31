@@ -235,3 +235,34 @@ print(squares) #and lastly we print tfe list :)"""
 squares = [value**2 for value in range(1, 11)]
 print(squares)
 
+# working with part of a list
+# slicing a list
+players = ['Ronaldo', 'Mbape', 'Neymah', 'Olise', 'Foden', 'Bruno']
+print(players[0:4])
+print(players[:3])
+print(players[4:])
+print(players[-3:]) #this prints the last three elements on the list
+
+#looping through a slice
+for player in players[-3:]:
+    print(player)
+
+#looping through a loop
+print("Here are the first players in my team")
+for player in players[:3]:
+    print(player.title())
+
+#copying a list
+my_food = ['Garri', 'Rice', 'Beef', 'Pork', 'Pie']
+friend_food = my_food[:]
+
+print("My favourite foods are:")
+my_food.append('Ice Scream')
+print(my_food)
+
+print("My friends favourite foods are:")
+friend_food.append('Plum')
+print(friend_food)
+
+
+
