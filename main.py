@@ -201,7 +201,7 @@ print(guest)
 
 
 #WORKING WITH LISTS USING LOOPS
-
+"""
 magicians = ['Nevis', 'Khan', 'Paul', 'Jack', 'Peter']
 
 for magician in magicians:
@@ -225,11 +225,13 @@ even_numbers = list(range(2, 11, 2))
 print(even_numbers)
 
 
-"""squares = [] #first we create our empty list
+""
+squares = [] #first we create our empty list
 for values in range(1, 11):  #next we loop though our given number of range
     square = values ** 2 #we square each value from the range
     squares.append(square) #Then we add te square numbers to the empty list we created
-print(squares) #and lastly we print tfe list :)"""
+print(squares) #and lastly we print tfe list :)
+""
 
 #list comprehension
 squares = [value**2 for value in range(1, 11)]
@@ -281,8 +283,183 @@ for dimension in dimensions:
     print(dimension)
 
 #STYLING MY CODE
+"""
+
+"""
+# IF STATEMENTS
+
+cars = ['tesla', 'bmw', 'audi', 'toyota', 'benz']
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+
+#Ignoring case when cheching conditions
+car_brand = 'Tesla'
+if car_brand == 'tesla':
+    print(car_brand)
+else:
+    print("Check the brand well!")
+
+#checking multiple conditions with the use of (and) and (or)
+#AND
+age_0 = 22
+age_1 = 18
+if age_0 >= 21 and age_1 >=21:   #both conditions must be true for it to be true
+    print("True")
+else:
+    print("False")
+
+#OR
+age_0 = 22
+age_1 = 18
+if age_0 >= 21 or age_1 >=21:   #only one condition must be true for it to be true
+    print("True")
+else:
+    print("False")
+
+#checking if a value  is (in) or (not in) a lists
+banned_users = ['andrew', 'carolina', 'david']
+user = 'marie'
+if user in banned_users:
+    print("Invalid User, you have been banned!")
+else:
+    print(f"{user}, you can proceed")
+
+
+#DICTIONARIES {}
+#Acollection of key-value pairs
+
+alien_0 = {'color' : 'green', 'point' : 5} 
+print(alien_0)
+print(alien_0['color'].title())
+print(alien_0['point'])
+
+#accessing iether the color or the point of the alien
+new_point = alien_0['point']
+print(f"you just earned {new_point} points")
+
+#adding a key-value pair in a dictonary
+alien_0['x-position'] =  0
+alien_0['y-position'] = 25
+print(alien_0)
+
+#Starting with an empty dictionary
+alien_0 = {}
+alien_0['color'] = 'yellow'
+alien_0['points'] = 5
+print(alien_0)
+print(f"the alien color is {alien_0['color'].title()}")
+#Modifying values in a dictionary
+alien_0['color'] = 'blue'
+print(f"the new color is {alien_0['color'].title()}")
+
+#mor examples
+
+alien_0 = {'x_position' : 0, 'y_position' : 25, 'speed' : 'medium'}
+print(f"Original position: {alien_0['x_position']}")
+
+#moving the alien to the right
+#determine how far to move the alien based on its current speed
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+elif alien_0['speed'] == 'medium':
+    x_increment = 2
+else: 
+    #this must be a fast alien
+    x_increment = 3
+
+#now position is the old position + the increment
+alien_0['x_position'] = alien_0['x_position'] + x_increment
+print(f"New position: {alien_0['x_position']}")
+
+#deleting a key value using the del statement
+alien_0 = {'color' : 'Green', 'points' : 5}
+print(alien_0)
+del alien_0['points']
+print(alien_0)
+
+#dictionary of similar objects
+favourite_languages = {
+    'norbet' : 'R',
+    'khan' : 'python',
+    'faith' : 'c',
+    'sarah' : 'rubby'
+}
+print(favourite_languages)
+
+#using a dictionary
+favourite = favourite_languages['khan'].title()
+print(f"The favourite language of Khan is {favourite}")
+
+#using get() to access a value
+alien_0 = {'color' : 'brown', 'speed' : 'fast'}
+point_value = alien_0.get('point', 'No points exist')
+print(point_value)
+
+favourite_languages = {
+    'nevis' : 'python',
+    'norbet' : 'xbet',
+    'mba' : 'woman',
+    'faith' : 'game'
+}
+print("\tNAMES:")
+for name in favourite_languages.keys():
+    print(name.title())
+print("\tLANGUAGE:")
+for language in favourite_languages.values():
+    print(language.title())
+for name, language in favourite_languages.items():
+    print(f"{name.title()}'s favourite language is {language.title()}")
+
+friends = ['angela', 'angelo', 'nevis', 'averson']
+
+for name in favourite_languages.keys():
+    print(f"Hi {name}")
+    if name in friends:
+         language = favourite_languages[name].title()
+         print(f"{name.title()}, your favourite language is {language}")
+if 'erin' not in favourite_languages.keys():
+    print("Erin pleace take our poll")
 
 
 
+#NESTING
 
+#A list of dictionaries
+alien_0 = {'color' : 'green', 'points' : 5}
+alien_1 = {'color' : 'yellow', 'points' : 10}
+alien_2 = {'color' : 'red', 'points' : 15}
 
+aliens = [alien_0, alien_1, alien_2]
+for alien in aliens:
+    print(alien)
+
+#making a many aliens without writing different dictionaries using range()
+#making an empty list to store the aliens
+aliens = []
+
+#creating 30 aliens
+for alien_number in range(30):
+    new_alien = {'color' : 'green', 'points' : 5, 'speed' : 'slow'}
+    aliens.append(new_alien)
+for alien in aliens[:5]:
+    print(alien)
+print(f"The number of aliens: {len(aliens)}")
+
+#modifying each aliens using the for loop and if statment
+for alien in aliens[:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+    #expanding the loop
+    elif alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
+for alien in aliens[:5]:
+    print(alien)
+"""
+#Chapter_7
