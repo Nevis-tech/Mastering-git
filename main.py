@@ -461,5 +461,64 @@ for alien in aliens[:3]:
         alien['points'] = 15
 for alien in aliens[:5]:
     print(alien)
+
+#A list inside a dictionary
+student = {
+    'name' : 'nevis',
+    'age' : 22,
+    'languages' : ['python', 'java', 'c++']
+}
+print(student['languages'] [0])
+
+#adding an item to the list
+student['languages'].append('javascript')
+print(student['languages'])
+
+#looping 
+for language in student['languages']:
+    print(language)
+
+#a dictionary inside a dictionary
+students = {
+    'student_1' : {
+        'name' : 'peter',
+        'age' : 20,
+        'course' : 'computer science'
+    },
+    'student_2' : {
+        'name' : 'john',
+        'age' : 22,
+        'course' : 'data science'
+    },
+    'student_3' : {
+        'name' : 'mary',
+        'age' : 20,
+        'course' : 'Software Eng.'
+    }
+}
+
+#accesing values
+print(students['student_1'] ['course'])
+
+#adding a new dictionary
+students['student_4'] = {
+    'name' : 'david',
+    'age' : 20,
+    'course' : 'cyber security'
+}
+
+#modifying an information
+students['student_2'] ['age'] = 23
+print(students['student_2'] ['age'])
+
+#looping through a nested dictionary
+for student_id, information in students.items():
+    print(student_id)
+    print(information)
 """
+
+
+
 #Chapter_7
+
+
