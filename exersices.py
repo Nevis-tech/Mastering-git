@@ -79,7 +79,7 @@ print("Modified Menu: ")
 for food in food_stuffs:
     print(food)
 
-"""
+
 
 #EXERCISES ON IF Statements
 car = 'tesla'
@@ -113,7 +113,7 @@ alien_color = 'green'
 if alien_color == 'green':
     print("you just earned 10 points!")
 
-"""
+
 age = int(input("Enter your age: \n"))
 if age < 2:
     print("you are still a baby")
@@ -133,6 +133,7 @@ else:
 
 #exercises on dictionaries
 #storing information about a person
+"""
 person = {
     'first_name' : 'khan',
     'last_name' : 'nevis',
@@ -169,7 +170,7 @@ favourite_5 = favourite_numbers['collins']
 print(f"The favourite number of khan is {favourite_5}")
 
 #words and thire meaning
-"""glossary = {
+glossary = {
     'list' : 'Used to make a list of things/items []',
     'tuple' : 'used to make list of things/items that can not be edited ()',
     'dictionary' : 'Acollection of key-value pairs { }',
@@ -191,7 +192,7 @@ print(f"Loops: {words_meaning}")
 #if conditions
 words_meaning = glossary['if statements']
 print(f"If- statements: {words_meaning}")
-"""
+
 
 #exercise 6.4   
 
@@ -235,3 +236,24 @@ for person in people:
         print(f"{person.title()}, your favourite language is  {favourite_languages[person].title()}")
     else:
         print(f"{person.title()}, you need to take a poll!")
+    """
+
+#exercises on chapter 7
+#7.1
+car = input("what is the name of the car  that you want to rent?\n")
+print(f"let me see if i can find you a {car}")
+
+#7.2
+seat = input("How many people are in your dinner tabke?\n")
+seat = int(seat)
+if seat > 8:
+    print("please you will have to wait for a table")
+else:
+    print("your table is ready")
+
+#7.3
+number = int(input("enter a number and i will tell if it's a multiple of 10"))
+if number % 10 == 0:
+    print(f"{number} is a  multiple of 10.")
+else:
+    print(f"{number} is not a multiple of 10.")

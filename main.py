@@ -520,5 +520,21 @@ for student_id, information in students.items():
 
 
 #Chapter_7
+#user inputs and while loops
+name = input('enter you name please: ')
+print(f"Hello {name}")
 
+#using int to get integer inputs
+age = int(input("Enter your age please: "))
+print(f"you are {age} years old")
+
+hieght = input("How tall are you please?\n")
+hieght = int(hieght)
+if hieght >= 48:
+    print("you are old enough to ride")
+else:
+    print("you will ride when you get taller")
+
+
+#WHILE LOOPSS
 
