@@ -521,7 +521,7 @@ for student_id, information in students.items():
 
 #Chapter_7
 #user inputs and while loops
-name = input('enter you name please: ')
+"""name = input('enter you name please: ')
 print(f"Hello {name}")
 
 #using int to get integer inputs
@@ -533,8 +533,36 @@ hieght = int(hieght)
 if hieght >= 48:
     print("you are old enough to ride")
 else:
-    print("you will ride when you get taller")
+    print("you will ride when you get taller")"""
 
 
-#WHILE LOOPSS
+#WHILE LOOPS
+#a while loop is a loop that repeats a block of code as long as it is true
+number = 1
+while number <= 5:
+    print(number)
+    number += 1
+
+#another example
+password = ""
+#while password != "python123":
+    #password = input("Enter your password: ")
+#print("login successful")
+
+#using whilee loop to print a number from 10 to 1
+number = 10
+while number >= 1:
+    print(number)
+    number -= 1 
+
+#letting a user choose when to quit
+promt = "Tell me something and i will repeat it back to you,"
+promt += "\nEnter 'quit' to end the program:" 
+message = ""
+while message != 'quit':
+    message = input(promt)
+    if message != 'quit':
+            print(message)
+    print(message)
+print("program ended")
 
