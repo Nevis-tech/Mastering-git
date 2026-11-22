@@ -240,7 +240,7 @@ for person in people:
 
 #exercises on chapter 7
 #7.1
-car = input("what is the name of the car  that you want to rent?\n")
+"""car = input("what is the name of the car  that you want to rent?\n")
 print(f"let me see if i can find you a {car}")
 
 #7.2
@@ -256,4 +256,110 @@ number = int(input("enter a number and i will tell if it's a multiple of 10"))
 if number % 10 == 0:
     print(f"{number} is a  multiple of 10.")
 else:
-    print(f"{number} is not a multiple of 10.")
+    print(f"{number} is not a multiple of 10.")"""
+
+#PYTHON PRACTICE EXERCISE
+#Question 1: Grade Calculator
+def get_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+
+#list of student score
+scores = [85, 42, 95, 67, 78] 
+for score in scores:
+    print("\nScore: ")
+    print(score)
+    print("Grade: ")
+    print(get_grade(score))
+
+#Question 2: Word frequency counter
+"""def count_words(sentence):
+    word_count = {}
+    words = sentence.split()
+    for word in words:
+        if word in word_count:
+            word_count[words] += 1
+        else:
+            word_count[words] = 1
+    return word_count
+
+sentence = input("Write a sentence:")
+result = count_words(sentence)
+print(result)"""
+
+#Question 3: 
+def cart_total(cart):
+    total = 0
+
+    for items, details in cart.items():
+        price = details["price"]
+        quantity = details["quantity"]
+
+        if quantity == 0:
+            continue
+        total += price * quantity
+    return total
+
+cart = {
+    "apple" : {"price" : 0.5, "quantity" : 4},
+    "bread" : {"price" : 2.5, "quantity" : 2},
+    "milk" : {"price" : 1.2, "quantity" : 3}
+}
+
+result =  cart_total(cart)
+print("shopping cart total:", result)
+
+#Question 4:
+"""def prime_number(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+#second function
+def filter_primes(numbers):
+    primes = []
+    for number in numbers:
+        if prime_number(number):
+            primes.append(number)
+    return primes
+
+#test the function
+numbers = [4, 7, 10, 13, 15, 17, 18, 19]
+
+result = filter_primes(numbers)
+print("prime numbers:", result)"""
+
+#Question 5:
+students = [
+    {"name" : "Alice", "marks" : [85, 90, 78]},
+    {"name" : "Bob", "marks" : [60, 55, 70]},
+    {"name" : "Cara", "marks" : [95, 92, 89]}
+]
+
+#function to calculate students average
+"""def student_averages(students):
+    averages = {}
+
+    for student in students:
+        name = student["name"]
+        marks = student["marks"]
+
+        total = 0
+
+        for mark in marks:
+            total += mark
+
+        average = round(total / len(marks), 2)
+        averages[name] = average
+    return averages"""

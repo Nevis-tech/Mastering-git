@@ -538,31 +538,97 @@ else:
 
 #WHILE LOOPS
 #a while loop is a loop that repeats a block of code as long as it is true
-number = 1
+"""number = 1
 while number <= 5:
     print(number)
-    number += 1
+    number += 1"""
 
 #another example
-password = ""
-#while password != "python123":
-    #password = input("Enter your password: ")
-#print("login successful")
+"""password = ""
+while password != "python123":
+    password = input("Enter your password: ")
+print("login successful") """
 
 #using whilee loop to print a number from 10 to 1
-number = 10
+"""number = 10
 while number >= 1:
     print(number)
-    number -= 1 
+    number -= 1 """
 
 #letting a user choose when to quit
-promt = "Tell me something and i will repeat it back to you,"
+"""promt = "Tell me something and i will repeat it back to you,"
 promt += "\nEnter 'quit' to end the program:" 
 message = ""
 while message != 'quit':
     message = input(promt)
     if message != 'quit':
-            print(message)
+            print(message) 
     print(message)
-print("program ended")
+print("program ended")"""
 
+#using a flag
+"""promt = "Tell me something and i will say it back to you:"
+promt += "\nEnter 'quit' to end the program."
+
+active = True
+
+message = " "
+while active:
+     message = input(promt)
+     if message != 'quit':
+          print(message)
+     else:
+          active = False
+print("program ended")"""
+
+#using break
+"""while True:
+    message = input("Enter something: ")
+    if message == 'quit':
+        break
+    print(message)"""
+
+#using continue
+"""number = 0
+while number < 10:
+    number += 1
+    if number % 2 == 0:
+        continue
+    print(number)"""
+
+#Using while loops with dictionaries and lists
+"""sanwitch_orders = ["tuna", "chicken", "beef"]
+finishes_sandwitch = []
+
+while sanwitch_orders:
+    current = sanwitch_orders.pop()
+    print(f"I made your {current} sandwitch.")
+finishes_sandwitch.append(current) """
+
+#Functions
+#main idea; write a block ofcode once and reuse later
+def greet_user():
+    print("Hello! weldom to python")
+greet_user()
+
+#parameters and arguments
+def greet_user(username):
+    print(f"HEllo, {username}!")
+greet_user("Nevis")
+
+#different ways of passing arguments
+ # A) Positional argument
+def describe_person(name, age):
+   print(f"{name.title()} is {age} years old")
+describe_person("nevis", 20)
+
+# B) keyword argumeent
+def describe_person(name, age):
+   print(f"{name.title()} is {age} years old")
+describe_person(age=20, name="nevis")  # the order doesnt matter
+
+# C) Default Value
+def greet_user(name, country = "Cameroon"):
+    print(f"Hello, {name.title()} form {country.title()}!")
+greet_user("nevis")
+greet_user("johhn", "nigeria")
